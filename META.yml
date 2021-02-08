@@ -1,21 +1,24 @@
 ---
 abstract: 'extract the unique elements of a list'
 author:
-  - "James FitzGibbon\n<james+perl@nadt.net>"
-build_requires: {}
+  - 'James FitzGibbon, <james+perl@nadt.net>'
+build_requires:
+  ExtUtils::MakeMaker: '6.46'
+  Test::More: '0'
 configure_requires:
-  Module::Build: 0.38
+  ExtUtils::MakeMaker: '6.46'
 dynamic_config: 1
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.110440'
+generated_by: 'ExtUtils::MakeMaker version 7.56, CPAN::Meta::Converter version 2.150010'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: List-Uniq
-provides:
-  List::Uniq:
-    file: lib/List/Uniq.pm
-    version: v0.21.0
+no_index:
+  directory:
+    - t
+    - inc
 resources:
-  license: http://dev.perl.org/licenses/
-version: v0.21.0
+  bugtracker: https://github.com/renderorange/List-Uniq/issues
+version: '0.22'
+x_serialization_backend: 'CPAN::Meta::YAML version 0.018'

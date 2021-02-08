@@ -1,36 +1,47 @@
 {
    "abstract" : "extract the unique elements of a list",
    "author" : [
-      "James FitzGibbon\n<james+perl@nadt.net>"
+      "James FitzGibbon, <james+perl@nadt.net>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.110440",
+   "generated_by" : "ExtUtils::MakeMaker version 7.56, CPAN::Meta::Converter version 2.150010",
    "license" : [
       "perl_5"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "List-Uniq",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
    "prereqs" : {
+      "build" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.46"
+         }
+      },
       "configure" : {
          "requires" : {
-            "Module::Build" : "0.38"
+            "ExtUtils::MakeMaker" : "6.46"
          }
-      }
-   },
-   "provides" : {
-      "List::Uniq" : {
-         "file" : "lib/List/Uniq.pm",
-         "version" : "v0.21.0"
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0"
+         }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "license" : [
-         "http://dev.perl.org/licenses/"
-      ]
+      "bugtracker" : {
+         "web" : "https://github.com/renderorange/List-Uniq/issues"
+      }
    },
-   "version" : "v0.21.0"
+   "version" : "0.22",
+   "x_serialization_backend" : "JSON::PP version 4.02"
 }

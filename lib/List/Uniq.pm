@@ -28,7 +28,7 @@ use base 'Exporter';
 use strict;
 use warnings;
 
-our $VERSION = '0.21.0';
+our $VERSION = '0.22';
 
 # set up exports
 our @EXPORT;
