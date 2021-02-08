@@ -6,10 +6,10 @@ use strict;
 use warnings;
 
 use Test::More;
-eval "use Test::NoBreakpoints 0.10";
-plan skip_all => "Test::NoBreakpoints 0.10 required for testing" if $@;
+eval "use Test::NoBreakpoints 0.13";
+plan skip_all => "Test::NoBreakpoints 0.13 required for testing" if $@;
 plan 'no_plan';
-all_files_no_brkpts_ok();
+all_files_no_breakpoints_ok();
 
 #
 # EOF
