@@ -169,6 +169,8 @@ Gabor Szabo.
 This module was written out of a need to unique an array that was
 auto-vivified and thus not easily tied to Array::Unique.
 
+L<List::Util/uniq>
+
 =head1 AUTHOR
 
 James FitzGibbon
