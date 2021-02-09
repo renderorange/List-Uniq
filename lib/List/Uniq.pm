@@ -169,6 +169,14 @@ Gabor Szabo.
 This module was written out of a need to unique an array that was
 auto-vivified and thus not easily tied to Array::Unique.
 
+=over
+
+=item L<List::Util/uniq>
+
+=item L<PerlPowerTools/uniq>
+
+=back
+
 =head1 AUTHOR
 
 James FitzGibbon
