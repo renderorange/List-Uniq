@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 use strict;
 use warnings;
 
@@ -20,6 +16,3 @@ my $in = [ qw|foo bar baz quux gzonk bar quux| ];
 my @expected = qw|foo bar baz quux gzonk|;
 is_deeply scalar uniq($in), \@expected,
     'one of two duplicates removed';
-
-#
-# EOF

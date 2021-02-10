@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 use strict;
 use warnings;
 
@@ -27,6 +23,3 @@ is $retsize, 5, 'call uniq in list context';
 my $ret = uniq(@in);
 is ref $ret, 'ARRAY', 'call uniq in scalar context';
 is scalar @$ret, $retsize, 'size of returned lists match';
-
-#
-# EOF

@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 use strict;
 use warnings;
 
@@ -14,6 +10,3 @@ is_deeply scalar uniq('foo', [ [ [ 'wibble' ] ] ], 'bar', [], ['foo'], 'quux', [
 
 is_deeply scalar uniq('foo', [ [ 'bar', 'baz' ] ] ), [ qw|foo bar baz| ],
     'multi-element recursive arrayrefs flatten properly';
-
-#
-# EOF

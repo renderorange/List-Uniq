@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 use strict;
 use warnings;
 
@@ -16,6 +12,3 @@ BEGIN {
 use_ok('List::Uniq');
 local $List::Uniq::VERSION = $List::Uniq::VERSION || 'from repo';
 note("List::Uniq $List::Uniq::VERSION, Perl $], $^X");
-
-#
-# EOF

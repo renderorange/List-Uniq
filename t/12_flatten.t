@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 use strict;
 use warnings;
 
@@ -21,6 +17,3 @@ my $ret = ( uniq( { flatten => 0 }, $elements ) )[0];
 for( 1 .. 3 ) {
     is $ret->[$_], $elements->[$_], "arrayrefs do not flatten explicitly $_/3";
 }
-
-#
-# EOF

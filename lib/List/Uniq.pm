@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 =head1 NAME
 
 List::Uniq - extract the unique elements of a list
@@ -208,6 +204,3 @@ This library is free software; you may use it under the same
 terms as perl itself.
 
 =cut
-
-#
-# EOF

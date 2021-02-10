@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 Changelog for List::Uniq
 ------------------------
 
@@ -38,6 +34,3 @@ Changelog for List::Uniq
 	Fix use and breakpoints tests
 	Remove coverage.txt
 	Update git and MANIFEST ignore lists
-
-#
-# EOF

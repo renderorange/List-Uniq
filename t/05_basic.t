@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 use strict;
 use warnings;
 
@@ -18,6 +14,3 @@ use_ok('List::Uniq', ':all');
 # simplest possible usage
 is_deeply scalar uniq('foo','foo'), [ 'foo' ],
     'one of two duplicates removed';
-
-#
-# EOF

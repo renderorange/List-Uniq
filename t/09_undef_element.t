@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 use strict;
 use warnings;
 
@@ -20,6 +16,3 @@ use_ok('List::Uniq', ':all');
 my @authors;
 is_deeply scalar uniq(undef), [undef],
 	'list with undef elements';
-
-#
-# EOF

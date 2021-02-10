@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 use strict;
 use warnings;
 
@@ -78,6 +74,3 @@ if( $exceptions ) {
     } qr/compare option is not a CODEREF/,
     'pass non-CODEREF for custom sort';
 }
-
-#
-# EOF
