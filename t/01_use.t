@@ -5,7 +5,7 @@ BEGIN {
     use Test::More;
     our $tests = 1;
     eval "use Test::NoWarnings";
-    $tests++ unless( $@ );
+    $tests++ unless ($@);
     plan tests => $tests;
 }
 
