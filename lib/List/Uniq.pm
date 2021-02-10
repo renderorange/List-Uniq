@@ -150,9 +150,6 @@ sub _unwrap {
 
 __END__
 
-
-=head1 EXAMPLES
-
 =head1 EXPORTS
 
 Nothing by default.
@@ -163,13 +160,11 @@ Everything with the B<:all> tag.
 
 =head1 SEE ALSO
 
-If you want to unique a list as you insert into it, see L<Array::Unique> by
-Gabor Szabo.
-
-This module was written out of a need to unique an array that was
-auto-vivified and thus not easily tied to Array::Unique.
-
 =over
+
+=item L<Array::Unique>
+
+If you want to unique a list as you insert into it, see L<Array::Unique>.
 
 =item L<List::Util/uniq>
 
