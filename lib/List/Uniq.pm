@@ -109,22 +109,22 @@ sub uniq
         $opts->{$opt} = $default_opts{$opt};
       }
     }
-    
+
+    my @list = @_;
+
     # flatten list references
     if( $opts->{flatten} ) {
-      my $unwrap;
-      $unwrap = sub { map { 'ARRAY' eq ref $_ ? $unwrap->( @$_ ) : $_ } @_ };
-      @_ = $unwrap->( \@_ );
+      @list = _unwrap( \@list );
     }
-    
+
     # uniq the elements
     my @elements;
     my %seen;
     {
         no warnings 'uninitialized';
-        @elements = grep { ! $seen{$_} ++ } @_;
+        @elements = grep { ! $seen{$_} ++ } @list;
     }
-    
+
     # sort before returning if so desired
     if( $opts->{sort} ) {
         if( $opts->{compare} ) {
@@ -138,10 +138,15 @@ sub uniq
             @elements = sort @elements;
         }
     }
-    
+
     # return a list or list ref
     return wantarray ? @elements : \@elements;
+}
 
+sub _unwrap {
+    my @list = @_;
+
+    return map { 'ARRAY' eq ref $_ ? _unwrap( @$_ ) : $_ } @list;
 }
 
 # keep require happy
